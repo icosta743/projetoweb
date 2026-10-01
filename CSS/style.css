@@ -1,104 +1,86 @@
-.titulo-lista {
-    background-color: deepskyblue;
+h5 {
+  background-color: aquamarine;
 }
 
-.listas {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-
- /* justificar o texto dos parágrafos */
+/* Justificar textos do parágrafos */
 p {
-    text-align: justify;
-    font-size: 80%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #54add9;
+  background-color: #54add9;
 }
-
-
 
 .bg-plum {
-    background-color: plum;
+  background-color: plum;
 }
 
-h6 > p {
-    background-color: burlywood;
+h6 ~ p {
+  background-color: beige;
 }
 
-input[type="number"] {
-    background-color: red;
+#internship {
+  display: inline-block; /* fica em linha, mas aceita width/height */
+  vertical-align: top; /* alinha as boxes pelo topo */
+  width: 200px;
+  height: 220px;
+  background-color: rgb(247, 195, 127);
+  border: green solid;
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-
-/* box model */
-#internship{
-    width: 200px;
-    height: 220px;
-    background-color: antiquewhite;
-    border: green solid;
-    margin: 10px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    
+#subjects {
+  display: inline-block; /* fica em linha, mas aceita width/height */
+  vertical-align: top; /* alinha as boxes pelo topo */
+  width: 200px;
+  height: 220px;
+  background-color: rgb(166, 211, 241);
+  border: blue solid;
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-#disciplinas{
-    width: 200px;
-    height: 220px;
-    background-color: antiquewhite;
-    border: green solid;
-    margin: 10px; 
-    display: inline-block;
-}
-
-#cesae-management {
-    text-align: center;
-
+#lists {
+  text-align: center; /* centraliza as boxes na página */
 }
 
 /* por defeito (em mobile, se considerarmos mobile first, a imagem aparece escondida) */
- #my-img {
-    display: none;
+#my-img {
+  display: none;
 }
-
 
 /* media query */
 /* para prints */
 @media print {
-    .nav a{
-        display: none;
-    }
-
-#cesae-management {
-    text-align: left;
-
+  nav {
+    display: none;
+  }
 }
 
 /* para tablets ou superiores */
-@media(min-width:1037px) {
-    #my-img {
-        display: block;
-    }
+@media (min-width: 1037px) {
+  #my-img {
+    display: block;
+  }
 }
 
-@media(min-width:800px) {
-    .bg-plum {
-        background-color: green;
-    }
+@media (min-width: 800px) {
+  .bg-plum {
+    background-color: green;
+  }
 }
- 
-@media(min-width:1800px) {
-    .bg-plum {
-        background-color: yellow;
-    }
+
+@media (min-width: 1800px) {
+  .bg-plum {
+    background-color: yellow;
+  }
 }

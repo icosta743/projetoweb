@@ -1,217 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage Projecto web</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage Projecto Web</title>
-    <link rel="shortcut icon" href="images/icons8-internet-48.apng (1).png" type="image/x-icon">
-/>
     <!-- CSS da minha app -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
 
-</head>
-<!-- Corpo da página -->
-
-<body>
-
-<h5> Halloween 🧙 </h5>
-
-    <!-- Menu de Navegação -->
+  <body>
+    <h5>Halloween 🧙</h5>
+    <!-- Menu de navegação teste -->
     <nav>
-        <a id="filmes" href="Pages/movies.html#reviews">Movies</a>
-        <a id="cesae" class="bg-plum" href="https://www.cesaedigital.pt" target="_blank">Cesae</a>
-        <a href="#calendar">Calendário</a>
-        <a href="Pages/linkandimages.html">Lobos</a>
+      <a id="voltaraotopo" href="pages/movies.html">Movies</a>
+      <a href="pages/pangolins.html">Pangolin</a>
+      <a
+        id="cesae"
+        class="bg-plum"
+        href="https://www.cesaedigital.pt"
+        target="_blank"
+        >Cesae</a
+      >
+      <a href="#calendar">Calendário</a>
+      <a href="https://en.wikipedia.org/wiki/Wolf">Lobos</a>
     </nav>
 
-
-    <!-- Menu de Navegação -->
-    <hr>
-
     <!-- Imagens -->
-    <img src="images/what-is-software-CA-Capterra-Header.png" alt="web" width="250px" 
-    height="100px" />
+    <img src="images/pc.png" alt="web" width="250px" height="100px" />
 
+    <!-- Imagem do lobo com ligação para a Wikipedia -->
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Wolf">
+      <img
+        id="my-img"
+        src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Kolm%C3%A5rden_Wolf.jpg"
+        alt="lobos-photo"
+        width="250px"
+        height="100px"
+      />
+    </a>
 
-    <!-- Formulário-->
-     <section>
-        <h4>Formulário de inscrição para SD</h4>
-        <form action="pages/utils/success.html">
-
-        <label for="user-name" class="bg-plum">Nome Completo</label>
-        <input id="user-name" type="text" placeholder="Nome:" required />
-
-        <br>
-        <label for="child">Nr de filhos</label>
-        <input id="child" type="number" value="2" readonly />
-        <br>
-        <label for="nif">Nif</label>
-        <input id="nif" type="text" value="PT" name="" id="" />
-
-        <br />
-        <br />
-            <button type="submit">Inscrever</button>
-
-            <button type="reset">Limpar</button>
-        </form>
-     </section>
-
-
-    <!-- Tabelas de Discisplinas-->
+    <!-- Formulário -->
     <section>
-        <h4>Módulos de Software Developer</h4>
-        <table border="1px">
-            <thead>
-            <tr>
-            <th>Nome</th>
-            <th>Nr Horas</th>
-            <th class="bg-plum">Formador</th>
-            <th>Método de Avaliação</th>
-          </tr>
-        </thead> 
-        <tbody align="center" >
-          <tr>
-          <td>Programação Web</td>
-          <td>50h</td>
-          <td>Sara Monteiro</td>
-          <td>AC / Projecto</td>
-        </tr>
-        <tr>
-          <td>Algoritmia em C#</td>
-          <td>50h</td>
-          <td>Marco Pereira</td>
-          <td>Exame / Projeto / exercicios</td>
-        </tr>
-        <tr>
-          <td>Bases de Dados</td>
-          <td>50h</td>
-          <td>Ana Martelo</td>
-          <td>Fichas de Trabalho e Apresentação</td>
-        </tr>
-         <tfoot>
-          <tr>  
-        </body>
-        
-            <th>Total Disciplinas</th>
-            <td colspan="3"><center>3</center></td>
-          </tr>
-        </tfoot>
-      </table>
-
-        </table>
+      <h4>Formulário de Inscrição para SD</h4>
     </section>
 
-    
-    <section class="listas">
+    <form action="pages/utils/success.html">
+      <label class="bg-plum" for="user-name">Nome completo</label>
+      <input id="user-name" type="text" placeholder="Nome:" />
 
-    <div id="internship">
-        <!-- listas -->
-        <!-- lista ordenada -->
-        <h5 class="titulo-lista">Lista de Melhores empresas para estagiar</h5>
+      <br />
+      <label for="user-number">Número / Idade:</label>
+      <input id="user-number" name="user_number" type="number" value="0" />
+
+      <br />
+      <label for="user-email">Email:</label>
+      <input id="user-email" type="email" placeholder="Email:" />
+      <br />
+      <label for="user-password">Password:</label>
+      <input id="user-password" type="password" placeholder="Password:" />
+      <br />
+      <label for="user-date">Data de Nascimento:</label>
+      <input id="user-date" type="date" />
+      <br />
+      <label for="user-terms">
+        <input id="user-terms" type="checkbox" />
+        Aceito os termos e condições
+      </label>
+      <br />
+      <br />
+      <br />
+
+      <button type="submit">Inscrever</button>
+    </form>
+    <br />
+    <button type="reset">Limpar</button>
+    <br />
+    <br />
+    <button type="button" onclick="alert('cucu')">cucu</button>
+
+    <!-- Tabela de Disciplinas -->
+    <section>
+      <h4>Módulos de Software Developer</h4>
+    </section>
+
+    <table border="1px">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Nr Horas</th>
+          <th class="bg-plum">Formador</th>
+          <th>Método de Avaliação</th>
+        </tr>
+      </thead>
+
+      <tr>
+        <td>Programação Web</td>
+        <td>50h</td>
+        <td>Sara Monteiro</td>
+        <td>AC / Projecto</td>
+      </tr>
+
+      <tr>
+        <td>Algoritmia em C#</td>
+        <td>50h</td>
+        <td>Marco Pereira</td>
+        <td>Exame / Projeto / exercicios</td>
+      </tr>
+
+      <tr>
+        <td>Bases de Dados</td>
+        <td>50h</td>
+        <td>Ana Martelo</td>
+        <td>Fichas de Trabalho e Apresentação</td>
+        <tfoot>
+          <tr>
+            <th>Total Disciplinas</th>
+            <td colspan="3">
+              <center>3</center>
+            </td>
+          </tr>
+        </tfoot>
+      </tr>
+    </table>
+
+    <section id="lists">
+      <div id="internship">
+        <!-- Listas -->
+        <!-- Lista ordenada -->
+        <h4>Empresas para estagiar</h4>
         <ol>
-            <li>Blip</li>
-            <li>Capgemini</li>
-            <li>Sonae</li>
+          <li>Blip</li>
+          <li>Capagemini</li>
+          <li>Sonae</li>
         </ol>
-    </div>
+      </div>
 
+      <div id="subjects">
+        <!-- Lista não ordenada -->
+        <h4>Lista de disciplinas</h4>
+        <ul>
+          <li>Web</li>
+          <li>Algoritimia</li>
+          <li>React</li>
+        </ul>
+      </div>
+    </section>
 
-    <div id="disciplinas">
-    <!-- lista não ordenada -->
-    <h5 class="titulo-lista">Lista de Disciplinas de SD</h5>
-    <ul>
-        <li>Web</li>
-        <li>Algoritmia</li>
-        <li>React</li>
-    </ul>
-</div>
-    
-</section>
+    <!-- Títulos -->
+    <h3>Hello, World!</h3>
+    <h1>Título 1</h1>
+    <h2>Título 1</h2>
+    <h3>Título 1</h3>
+    <h4>Título 1</h4>
+    <h5>Título 1</h5>
+    <h6>Título 1</h6>
 
+    <!-- Parágrafo -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse porro
+      ducimus ratione voluptatibus quidem animi quibusdam ipsam, tempore, fugiat
+      placeat nihil asperiores dicta, soluta architecto blanditiis a non tenetur
+      repellendus! Delectus ut, aliquam quos ipsum optio exercitationem
+      quibusdam nobis laborum adipisci dolores odit id harum illo expedita rem
+      esse? Ea recusandae temporibus placeat fugiat nisi assumenda sunt
+      repudiandae perspiciatis facere! Eos hic corrupti voluptates molestiae
+      aliquam beatae ea fugiat corporis dolores facilis culpa eius, atque quam
+      dignissimos officia maxime ipsum fugit expedita minus unde ratione
+      blanditiis. Harum porro minima tenetur? Quaerat excepturi eaque inventore
+      cupiditate, ab laudantium commodi in nisi dolore sint ducimus id. Esse
+      tenetur ut facere, magnam quidem, rerum sequi maiores ab fuga veniam
+      accusantium obcaecati nostrum quam. Magni, adipisci ratione quaerat
+      repudiandae dolor natus ullam iusto accusantium veniam maiores repellendus
+      sequi assumenda, accusamus similique sit quos reiciendis recusandae
+      temporibus esse placeat quasi officia odit voluptatibus? Eligendi, libero?
+      Nostrum minima eos, quo soluta eum sunt optio dignissimos iusto quia
+      repellendus sapiente quos neque architecto sint eius dolorem, esse fugit
+      aut culpa! Quam exercitationem itaque amet numquam aperiam harum. Ea
+      voluptatem exercitationem eos maiores blanditiis tempore accusantium
+      corporis voluptates dolores cupiditate. Impedit adipisci dicta tenetur
+      maxime fuga temporibus tempore saepe, minus labore, earum, illo aspernatur
+      vel quas recusandae. Rerum? Illo, officia magnam tempora porro cum
+      molestias velit tempore dignissimos odio voluptas ab labore molestiae
+      perspiciatis quo sequi autem ex culpa eveniet, fugiat excepturi mollitia
+      delectus impedit dolorem numquam. Iure. Sed ab dignissimos modi! Nemo
+      atque natus est facere quasi! Quisquam velit architecto excepturi nisi
+      inventore vero eveniet facere, numquam et est non? Error consequuntur rem
+      earum aspernatur! Soluta, mollitia. Quas sapiente iusto deleniti
+      voluptate, dicta minus veritatis repellendus, labore, sed repellat
+      laborum! Vitae maiores quis mollitia ipsa eius nam adipisci expedita quasi
+      voluptates natus minus possimus, deserunt animi aspernatur?
+    </p>
 
-    <h3>Hello Mundo, bem vindos</h3>
-
-    <!-- Titulos -->
-    <h1>Titulo 1</h1>
-    <h2>Titulo 2</h2>
-    <h3>Titulo 3</h3>
-    <h4>Titulo 4</h4>
-    <h5>Titulo 5</h5>
-    <h6>Titulo 6</h6>
-
-    <!-- Paragrafo -->
-    <p>Eu sou um parágrafo</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ratione consectetur rerum numquam optio
-        voluptatem consequatur nobis qui obcaecati amet! Repudiandae ut perspiciatis delectus sequi, fugiat quam quis
-        esse et.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nam animi corrupti ducimus eaque ad placeat?
-        Quos omnis eius vel molestias, voluptas sit eum aspernatur inventore architecto! Expedita, odio natus.
-        Voluptatum, assumenda qui, aliquam aut laboriosam iure quae quod officia omnis cumque odit eius aliquid
-        exercitationem, repellat in perspiciatis velit hic possimus commodi id alias. Autem tempore eum cupiditate
-        deleniti.
-        Alias doloribus aliquid impedit dolore, porro minus perspiciatis illo aspernatur voluptates, laboriosam
-        perferendis corporis voluptatibus error cumque! Quam numquam consequuntur, odit, maxime error id illum iusto,
-        alias dolorum nemo reiciendis.
-        Ipsam ipsum alias nulla. Voluptas harum reprehenderit assumenda quibusdam ad laboriosam sed sit illo, tenetur
-        animi aperiam ipsam vel, dolorum excepturi modi quo distinctio dolor fugiat repudiandae quam consectetur? Quasi.
-        Dolores, non sit fugit amet hic adipisci alias incidunt dicta maiores aperiam quas nesciunt voluptas voluptate
-        molestias labore ipsa accusamus ad rerum esse quisquam! Consectetur reprehenderit soluta itaque placeat eos!
-        Consequuntur nobis qui culpa animi, ullam cupiditate vel tempora eius sequi quae architecto ab sit vero nemo
-        consectetur maxime quibusdam eum facere assumenda iure dicta tenetur! Ipsum quis perferendis amet!
-        Iste modi, eligendi consequuntur nemo maiores neque repudiandae sapiente, nihil soluta dicta iusto libero sint
-        consectetur nostrum voluptatibus vero, perspiciatis magnam aut praesentium inventore. Dolores dolorem facilis
-        perferendis est cupiditate?
-        Nisi, harum molestias. Officiis inventore in enim esse commodi ut omnis a eum adipisci consectetur. Nisi, vitae.
-        Velit minus earum veniam rem hic, tempore accusamus! Possimus vitae tenetur repellendus tempore!
-        Sapiente, autem ducimus eius porro esse, illum accusamus excepturi nemo suscipit corporis optio nihil, voluptas
-        dolorem veniam? Earum, placeat quo, molestiae ab accusamus praesentium incidunt quae sit tempora architecto
-        porro.
-        Nam dolorum debitis labore impedit, dolore enim laudantium eligendi? Neque animi provident fuga, nostrum
-        pariatur veniam ipsum expedita debitis nemo saepe possimus quae id et atque enim excepturi, molestiae sint?</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, vel!</p>
-
-
-
-    <body>
-    
-
-    Movies
-    My Top 3 Movies:
-    <!-- listas -->
-    <!-- lista ordenada -->
-    <h5>movies</h5>
-    <ol>
-        <li>amadeus</li>
-        <li>stand by me</li>
-        <li>amelie</li>
-    </ol>
-
-    Other Good Movies:
-    <!-- lista não ordenada -->
-    <h5>movies</h5>
-    <ul>
-        <li>Alien</li>
-        <li>Parasite</li>
-        <li>Annie Hall</li>
-    </ul>
-
-
-    <h6>As minhas reviews de filmes</h6>
-    <p>Tecnicamente x é melhor, mas a narrativa de y é mais bem construída</p>
-
-
-
-    <!--Informação sobre calendários escolar do CESAE -->
-    <h5>Calendário Escolar</h5>
-    <p>Férias de Natal: 16 de Dezembro</p>
-
-    <!--Voltar ao topo -->
-    <a href="#filmes">Voltar ao topo</a>
-
-
-//teste
-
-
-
-</body>
+    <!-- Informação sobre calendário escolar do CESAE -->
+    <h5 id="calendar">Calendário Escolar</h5>
+    <p>Férias de Natal: 16 de dezembro</p>
+    <a href="#voltaraotopo">Voltar ao topo</a>
+  </body>
+</html>
